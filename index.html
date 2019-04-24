@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RPS - Multiplayer</title>
+    <!-- Reset CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Style CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- Link to Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+</head>
+<body>
+    <div class='jumbotron'>
+        <h1>Rock, Paper, Scissors</h1>
+    </div>
+
+    <!-- Instructions/Current Step -->
+    <div class='row'>
+        <div class='col-md-12'>
+            <div class='instructions' id='instructions'><h5>Welcome! Once two players have signed in, the game will begin.</h5></div>
+        </div>
+    </div>
+    <!-- Buttons Go Here -->
+    <div class='row'>
+        <div class='col-md-12'>
+            <div class='btn-group' id='buttons'></div>
+        </div>
+    </div>
+    <!-- Wins/Losses/Ties -->
+    <div class='row'>
+        <!-- Player One Wins -->
+        <div class='col-md-4'>
+            <h4>Wins: </h4><p id="player-one-wins"></p>
+        </div>
+        <!-- Ties -->
+        <div class='col-md-4'>
+            <h5>Ties: </h5><p id="ties"></p>
+        </div>
+        <!-- Player Two Wins -->
+        <div class='col-md-4'>
+            <h4>Wins: </h4><p id='player-two-wins'></p>
+        </div>
+    </div>
+    
+    <!-- Body -->
+    <div class='row'>
+        <!-- Player 1 Side -->
+        <div class='col-md-4'>
+            <!-- Card for Player Image/Name -->
+            <div class="card">
+                <h1 class='card-header'><span id='player-one-name'>Player One</span></h1>
+                <img class='card-img-bottom' src='assets/images/blank-profile.png' alt="profile picture">
+            </div>
+        </div>
+        <!-- Player One Choice -->
+        <div class='col-md-2'>
+            <div class='choice-container'>
+                <span id='player-one'>Player One</span><hr>
+                <p id='player-one-choice'></p>
+            </div>
+        </div>
+        <!-- Player Two Choice -->
+        <div class='col-md-2'>
+            <div class='choice-container'>
+                <span id='player-two'>Player Two</span><hr>
+                <p id="player-two-choice"></p>
+            </div>
+        </div>
+
+        <!-- Player 2 Side -->
+        <div class='col-md-4'>
+                <div class="card">
+                    <h1 class='card-header'><span id='player-two-name'>Player Two</span></h1>
+                    <img class='card-img-bottom' src='assets/images/blank-profile.png' alt="profile picture">
+                </div>
+        </div>
+    </div>
+    
+
+
+
+        
+</body>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!-- Javascript -->
+    <script src="assets/javascript/game.js"></script>
+</html>

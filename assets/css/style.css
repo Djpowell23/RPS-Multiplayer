@@ -1,0 +1,28 @@
+body {
+    margin: 0 auto;
+    text-align: center;
+    width: 90vw;
+}
+
+.btn-primary {
+    font-size: 22px;
+    height: 75px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 150px;
+}
+
+.choice-container {
+    border: 1px solid black;
+    height: 150px;
+    margin-top: 15vw;
+}
+
+.instructions {
+    margin-bottom: 10px;
+}
+
+.jumbotron {
+    margin-bottom: 15px;
+}
